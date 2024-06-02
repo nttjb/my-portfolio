@@ -1,0 +1,99 @@
+body {
+   
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(new.gif);
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.title-mid h1 {
+    color: rgb(255, 251, 240);
+    text-align: center;
+    margin-left: 100%;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform 0.5s ease, color 0.3s ease, text-shadow 0.5s ease; /* Add transition for smooth transformation, color change, and text-shadow change */
+}
+
+.title-mid h1:hover {
+    color: #dd988c; /* Change to the desired hover color */
+    transform: rotate(360deg) scale(1.2); /* Rotate and scale the text on hover */
+    text-shadow: 0 0 10px rgba(188, 85, 67, 0.913); /* Add a shadow effect on hover */
+}
+
+.midterms{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px; /* Adjusted margin-top */
+    padding: 20px; /* Adjusted padding */
+}
+
+/* Card */
+.mid-act {
+    margin-top: 15%;
+    width: 350px; 
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.mid-act:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Accent */
+.mid-act::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjusted width */
+    height: 100%; /* Adjusted height */
+    background: linear-gradient(45deg, rgb(5, 68, 145), rgb(16, 6, 152));
+    transition: opacity 0.3s ease;
+    opacity: 0.5; /* Adjusted opacity */
+    z-index: -1; /* Ensure the gradient is behind the card content */
+}
+
+.mid-act:hover::before {
+    opacity: 0.3; /* Adjusted opacity */
+}
+
+/* Card Image */
+.mid-act img {
+    width: 100%;
+    height: auto; /* Adjusted height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.mid-act:hover img {
+    transform: scale(1.05); /* Adjusted scaling */
+}
+
+/* Card Content */
+.mid-act {
+    padding: 20px; /* Adjusted padding */
+}
+
+.mid-act h1 {
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 15px; /* Increased margin */
+    color: #333; /* Adjusted color for better contrast */
+    font-family: "Arial", sans-serif; /* Changed font */
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mid-act {
+        width: 90%;
+    }
+}

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(new.gif);
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+   
+}
+
+.navbar .logo {
+    width: 65px;
+    cursor: pointer;
+    margin-top: 0%;
+    margin-left: -2%;
+    border-radius: 200px;
+}
+
+.logo img {
+    width: 30;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+    position: relative;
+}
+
+ul li a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 220, 171);
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+.info {
+    margin-top: 15%;
+    margin-left: 8%;
+}
+
+
+
+ul li a::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(255, 153, 0, 0.816);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 5px;
+    transition: width 0.3s, transform 0.3s;
+}
+
+ul li:hover a::before {
+    width: 100%;
+    transform: translateX(0);
+}
+
+ul li:hover a {
+    color: rgba(255, 153, 0, 0.816)
+}
+
+.info {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.info h1 {
+    font-size: 50px; 
+    line-height: 40px; 
+    color: white;
+    font-family:  "Poetsen One", sans-serif;
+}
+
+.info h2 {
+    font-size: 30px; 
+    letter-spacing: 0.5px; 
+    line-height: 35px; 
+    margin-top: 10px;
+    margin-left: 60px;
+    color: whitesmoke;
+    font-family:  "Poetsen One", sans-serif;
+}
+
+.info h3 {
+    font-size: 18px; 
+    letter-spacing: 1px; 
+    line-height: 10px; 
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    margin-left: 3%;
+    font-family:  "Poetsen One", sans-serif;
+}
+
+.info span {
+    color: #dd885a;
+}
+
+.image {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 16.5%;
+    bottom: 5%;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+.me {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+   margin-top: 0%;
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+}
+.abt p {
+    font-size: medium;
+    margin: 20px 50px 0 275px;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0 50px 20px 275px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.me p{
+    color: white;
+ margin-bottom: 25%;   
+    margin-left: -10%;
+    margin-top: 7%;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.me span{
+    color: rgb(194, 158, 114);
+    font-family:  "Poetsen One", sans-serif;
+}
+.my-skill{
+    margin-left: 40%;
+    margin-top: -25%;
+    font-size: x-large;
+    
+}
+.my-skill p{
+    margin: auto; 
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.skills span{
+    color: rgb(194, 158, 114);   
+    font-family: "Poetsen One", sans-serif;
+
+}
+.my-studies{
+     margin-left: 40%;
+    margin-top: -12%;
+    font-size: x-large;
+}
+.my-studies p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.em img{
+    width: 20%;
+    height: 15%;
+    margin-left: 10%;
+    margin-bottom: -550px;
+    border-radius: 45px;
+}

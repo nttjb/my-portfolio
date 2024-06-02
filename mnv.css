@@ -1,0 +1,46 @@
+.vision-mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: 50% auto; 
+    transform: translateY(-50%); 
+}
+
+.mv {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    transition: transform 0.3s ease; /* Smooth transition for the entire section */
+}
+
+/* Vision Section */
+.mv h2 {
+    font-size: xx-large;
+    color: #e2a84a; 
+    text-align: center;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.mv p {
+    margin: auto;
+    text-align: center;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effects */
+.mv:hover {
+    transform: scale(1.05); /* Slightly enlarge the entire section on hover */
+}
+
+.mv:hover h2 {
+    color: #ffcc00; /* Change to a different color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+    transform: translateY(-5px); /* Slightly move the text up on hover */
+}
+
+.mv:hover p {
+    color: #cccccc; /* Change to a different color on hover */
+    transform: translateY(-3px); /* Slightly move the text up on hover */
+}

@@ -1,0 +1,58 @@
+
+.icon {
+    margin: 0;
+    padding: 0; 
+    font-size: xx-large;
+}
+
+.fa-brands.fa-facebook {
+    margin-top: 29%;
+    margin-left: 18%;
+    margin-bottom: 20%;
+    color: transparent;
+    background: linear-gradient(to right, #ffffff, #ef9f30, #a26e19); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.fa-brands.fa-facebook:hover {
+    color: white;
+    animation: glow 1s infinite alternate;
+}
+
+
+.fa-brands.fa-facebook-messenger,
+.fa-brands.fa-instagram {
+    margin-top: 15%;
+    margin-left: 2%;
+    color: transparent;
+    background: linear-gradient(to right, #ffffff, #ef9f30, #a26e19); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.5s ease;
+    position: relative;
+}
+
+.fa-brands.fa-facebook-messenger:hover,
+.fa-brands.fa-instagram:hover {
+    color: white;
+    animation: glow 3s infinite alternate;
+}
+
+
+
+
+
+@keyframes glow {
+    5% {
+        text-shadow: 0 0 5px #e0e0df;
+    }
+    70% {
+        text-shadow: 0 0 20px #e0e0df;
+    }
+    200% {
+        text-shadow: 0 0 5px #e0e0df;
+    }
+}
